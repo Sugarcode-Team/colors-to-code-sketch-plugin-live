@@ -1,0 +1,32 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "commands": [
+    {
+      "name": "Run Plugin...",
+      "identifier": "colorstocode.my-command-identifier",
+      "script": "./export-colors.js",
+      "handlers": {
+        "run": "onRun",
+        "actions": {
+          "SelectionChanged.finish": "onSelectionChanged",
+          "Shutdown": "onShutdown"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "Colors → Code",
+    "items": [
+      "colorstocode.my-command-identifier"
+    ]
+  },
+  "version": "0.0.1",
+  "description": "Export Colors as organized Stylesheets for Android, CSS, Less, SCSS, Sass, React, ReactNative, Stylus, PostCSS and CSS Crush.",
+  "name": "Colors → Code",
+  "identifier": "colorstocode",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com/Sugarcode-Team/colors-to-code-sketch-plugin-live/master/.appcast.xml",
+  "author": "Sugarcode (Tobias Boertz & Moritz Halfmeyer)",
+  "authorEmail": "office@sugarcode.de"
+}

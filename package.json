@@ -1,0 +1,39 @@
+{
+  "name": "colors-to-code-sketch-plugin",
+  "description": "Export Colors as organized Stylesheets for Android, CSS, Less, SCSS, Sass, React, ReactNative, Stylus, PostCSS and CSS Crush.",
+  "version": "0.0.1",
+  "repository": "https://github.com/Sugarcode-Team/colors-to-code-sketch-plugin-live",
+  "engines": {
+    "sketch": ">=3.0"
+  },
+  "skpm": {
+    "name": "Colors → Code",
+    "manifest": "src/manifest.json",
+    "main": "colorstocode.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.4",
+    "@skpm/extract-loader": "^2.0.2",
+    "css-loader": "^3.2.0",
+    "html-loader": "^0.5.5"
+  },
+  "resources": [
+    "resources/**/*.js"
+  ],
+  "dependencies": {
+    "@skpm/dialog": "^0.4.0",
+    "@skpm/fs": "^0.2.6",
+    "sketch-module-web-view": "^3.1.4"
+  },
+  "author": "Sugarcode (Tobias Boertz & Moritz Halfmeyer)"
+}
