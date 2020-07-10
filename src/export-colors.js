@@ -136,7 +136,7 @@ const getSelectedItems = () => {
     if(item.selected){
       const { fills } = item.style
       if(fills.length > 0){
-        colors.push({name: item.name, hex: fills[0].color})
+        colors.push({name: item.name, hex: fills[0].color.replace('#','')})
       }
     }
   });
