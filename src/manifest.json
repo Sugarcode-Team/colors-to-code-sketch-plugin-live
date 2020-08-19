@@ -21,7 +21,7 @@
       "colorstocode.my-command-identifier"
     ]
   },
-  "version": "0.0.1",
+  "version": "1.0.3",
   "description": "Export Colors as organized Stylesheets for Android, CSS, Less, SCSS, Sass, React, ReactNative, Stylus, PostCSS and CSS Crush.",
   "name": "Colors → Code",
   "identifier": "colorstocode",
