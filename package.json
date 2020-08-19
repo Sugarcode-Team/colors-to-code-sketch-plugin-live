@@ -1,7 +1,7 @@
 {
   "name": "colors-to-code-sketch-plugin",
   "description": "Export Colors as organized Stylesheets for Android, CSS, Less, SCSS, Sass, React, ReactNative, Stylus, PostCSS and CSS Crush.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "repository": "https://github.com/Sugarcode-Team/colors-to-code-sketch-plugin-live",
   "engines": {
     "sketch": ">=3.0"
